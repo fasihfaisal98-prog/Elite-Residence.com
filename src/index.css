@@ -1,0 +1,10 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; }
+body { @apply bg-ivory text-charcoal font-sans antialiased; }
+@layer components {
+  .btn-gold { @apply inline-flex items-center justify-center gap-2 bg-gold text-ink px-6 py-3 text-sm font-semibold tracking-wide transition hover:bg-champagne; }
+  .btn-line { @apply inline-flex items-center justify-center gap-2 border border-white/60 text-white px-6 py-3 text-sm font-medium tracking-wide transition hover:bg-white hover:text-ink; }
+  .eyebrow { @apply text-xs uppercase tracking-[0.3em] text-champagne; }
+  .h2 { @apply font-serif text-4xl md:text-5xl font-semibold leading-tight; }
+  .field { @apply w-full border border-black/15 bg-white px-3 py-3 text-sm outline-none focus:border-champagne; }
+}
